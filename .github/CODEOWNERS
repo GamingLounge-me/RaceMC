@@ -1,0 +1,14 @@
+# Everything that isn't overwritten will belong to the security group
+* @gaminglounge-me/security
+
+# Add Gradlw and workflow to the build-system group
+.github/workflows/ @gaminglounge-me/build-system
+gradle/ @gaminglounge-me/build-system
+*.gradle @gaminglounge-me/build-system
+gradlew @gaminglounge-me/build-system
+gradlew.bat @gaminglounge-me/build-system
+
+# Execlude these files/folder (everyone has acces)
+readme.md
+README.md
+src/
