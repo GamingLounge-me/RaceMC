@@ -2,6 +2,7 @@ name: RaceMC
 version: '${version}' 
 main: me.gaminglounge.racemc.RaceMC
 description: 
-api-version: '1.21' 
+api-version: '1.21.4' 
+loader: me.gaminglounge.racemc.Loader
 authors: 
-  - "NAME" 
+  - "Jan Tom Förster" 

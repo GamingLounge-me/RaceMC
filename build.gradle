@@ -33,10 +33,16 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "infernalsuite"
+        url = 'https://repo.infernalsuite.com/repository/maven-snapshots/'
+    }
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT") // probaly need to change manuelly
+    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT") // Ensure this matches your server version
+    compileOnly 'com.infernalsuite.asp:api:4.0.0-SNAPSHOT'
+    implementation 'com.infernalsuite.asp:file-loader:4.0.0-SNAPSHOT'
 }
 
 def targetJavaVersion = 21 // probaly need to change manuelly
